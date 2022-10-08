@@ -5,6 +5,7 @@
 //  Created by Renato F. dos Santos Jr on 08/10/22.
 //
 
+import SwiftUI
 import UIKit
 
 final class ViewController: UIViewController {
@@ -37,4 +38,3 @@ final class ViewController: UIViewController {
         viewWillAppear(false)
     }
 }
-
