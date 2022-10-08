@@ -9,10 +9,10 @@ import UIKit
 
 final class ViewController: UIViewController {
 
-    private var customView: UIView
+    private var customView: ViewProtocol // { self.view as ViewProtocol}
     private var viewModel: ViewModelProtocol
 
-    init(withCustomView customView: UIView, viewModel: ViewModelProtocol) {
+    init(withCustomView customView: ViewProtocol, viewModel: ViewModelProtocol) {
         self.customView = customView
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -28,7 +28,13 @@ final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        showView()
+    }
+
+    private func showView() {
         title = viewModel.title
+        customView.show(image: viewModel.image, withBackgroundColor: viewModel.color)
+        viewWillAppear(false)
     }
 }
 

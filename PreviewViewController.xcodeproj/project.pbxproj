@@ -17,6 +17,7 @@
 		88F5FCDB28F1F7F400F0D1F6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5FCDA28F1F7F400F0D1F6 /* ViewModel.swift */; };
 		88F5FCDD28F1F80200F0D1F6 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5FCDC28F1F80200F0D1F6 /* ViewModelProtocol.swift */; };
 		88F5FCE028F1F88B00F0D1F6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5FCDF28F1F88B00F0D1F6 /* Model.swift */; };
+		88F5FCE528F2037C00F0D1F6 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5FCE428F2037C00F0D1F6 /* ViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		88F5FCDA28F1F7F400F0D1F6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		88F5FCDC28F1F80200F0D1F6 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		88F5FCDF28F1F88B00F0D1F6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		88F5FCE428F2037C00F0D1F6 /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				88F5FCD528F1F46D00F0D1F6 /* View.swift */,
+				88F5FCE428F2037C00F0D1F6 /* ViewProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,6 +152,14 @@
 				88F5FCDF28F1F88B00F0D1F6 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		88F5FCE128F1FF9300F0D1F6 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				88F5FCE228F1FFC500F0D1F6 /* PreviewViewController.swift */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 				88F5FCBB28F1F09D00F0D1F6 /* AppDelegate.swift in Sources */,
 				88F5FCDD28F1F80200F0D1F6 /* ViewModelProtocol.swift in Sources */,
 				88F5FCDB28F1F7F400F0D1F6 /* ViewModel.swift in Sources */,
+				88F5FCE528F2037C00F0D1F6 /* ViewProtocol.swift in Sources */,
 				88F5FCBD28F1F09D00F0D1F6 /* SceneDelegate.swift in Sources */,
 				88F5FCE028F1F88B00F0D1F6 /* Model.swift in Sources */,
 			);

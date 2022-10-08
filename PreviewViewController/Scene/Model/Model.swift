@@ -6,7 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
 struct Model {
     var title: String
+    var color: UIColor
+    var image: UIImage
 }

@@ -6,7 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
 protocol ViewModelProtocol: AnyObject {
     var title: String { get }
+    var image: UIImage { get }
+    var color: UIColor { get }
 }

@@ -17,8 +17,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
 
         // MARK: Dependency Injection
-        let previewModel: Model = .init(title: "Preview ViewController")
-        let viewModel: ViewModelProtocol = ViewModel(withModel: previewModel)
+        let title = "Preview ViewController"
+        let image = UIImage(systemName: "location.fill")
+        let color = UIColor.lightGray
+        
+        let previewModel = Model(title: title,
+                                 color: color,
+                                 image: image ?? UIImage())
+        let viewModel = ViewModel(withModel: previewModel)
         let view = View()
         let viewController = ViewController(withCustomView: view, viewModel: viewModel)
 

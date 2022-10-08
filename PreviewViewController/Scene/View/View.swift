@@ -6,16 +6,18 @@
 //
 
 import UIKit
+import SwiftUI
 
-final class View: UIView {
+final class View: UIView, ViewProtocol {
 
-    override init(frame: CGRect = UIScreen.main.bounds) {
-        super.init(frame: frame)
+    private(set) var image: UIImage?
+    private(set) var imageView: UIImageView?
+    private(set) var colorBackground: UIColor?
+
+    func show(image: UIImage, withBackgroundColor colorBackground: UIColor) {
+        self.image = image
+        self.colorBackground = colorBackground
         configure()
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 
     private func configure() {
@@ -26,11 +28,24 @@ final class View: UIView {
 extension View: ViewCodeProtocol {
 
     func configureViews() {
-        backgroundColor = .lightGray
+        backgroundColor = colorBackground
+        imageView = .init(image: image)
+        imageView?.translatesAutoresizingMaskIntoConstraints = false
     }
 
-    func buildHierarchy() { }
+    func buildHierarchy() {
+        guard let imageView = self.imageView else { return }
+        addSubview(imageView)
+    }
 
-    func setupConstraints() { }
+    func setupConstraints() {
+        guard let imageView = self.imageView else { return }
+        NSLayoutConstraint.activate([
+            imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            imageView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.3),
+            imageView.heightAnchor.constraint(equalTo: widthAnchor, multiplier: 0.3),
+        ])
+    }
 
 }
