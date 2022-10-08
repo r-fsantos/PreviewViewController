@@ -10,7 +10,7 @@ import UIKit
 
 final class ViewController: UIViewController {
 
-    private var customView: ViewProtocol // { self.view as ViewProtocol}
+    private var customView: ViewProtocol
     private var viewModel: ViewModelProtocol
 
     init(withCustomView customView: ViewProtocol, viewModel: ViewModelProtocol) {
