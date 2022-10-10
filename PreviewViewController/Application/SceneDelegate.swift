@@ -17,8 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
 
         // MARK: Dependency Injection
-
-        let viewController = Injector.shared.getPreviewViewController
+        let injector = Injector()
+        let viewController = injector.getPreviewViewController
         window?.rootViewController = UINavigationController(rootViewController: viewController)
     }
 

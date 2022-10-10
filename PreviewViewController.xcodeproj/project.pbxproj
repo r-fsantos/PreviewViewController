@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		88BE863428F221F400A4DA5F /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BE863328F221F400A4DA5F /* Injector.swift */; };
 		88BE863628F22AB100A4DA5F /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BE863528F22AB100A4DA5F /* LiveView.swift */; };
+		88BE863828F2309500A4DA5F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BE863728F2309500A4DA5F /* TestViewController.swift */; };
 		88F5FCBB28F1F09D00F0D1F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5FCBA28F1F09D00F0D1F6 /* AppDelegate.swift */; };
 		88F5FCBD28F1F09D00F0D1F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5FCBC28F1F09D00F0D1F6 /* SceneDelegate.swift */; };
 		88F5FCBF28F1F09D00F0D1F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5FCBE28F1F09D00F0D1F6 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		88BE863328F221F400A4DA5F /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		88BE863528F22AB100A4DA5F /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
+		88BE863728F2309500A4DA5F /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		88F5FCB728F1F09D00F0D1F6 /* PreviewViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreviewViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F5FCBA28F1F09D00F0D1F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88F5FCBC28F1F09D00F0D1F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				88BE863228F221C200A4DA5F /* Preview */,
 				88BE863128F221AF00A4DA5F /* Injector */,
+				88BE863728F2309500A4DA5F /* TestViewController.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				88F5FCD428F1F25700F0D1F6 /* ViewCodeProtocol.swift in Sources */,
 				88F5FCD628F1F46D00F0D1F6 /* View.swift in Sources */,
 				88F5FCBB28F1F09D00F0D1F6 /* AppDelegate.swift in Sources */,
+				88BE863828F2309500A4DA5F /* TestViewController.swift in Sources */,
 				88F5FCDD28F1F80200F0D1F6 /* ViewModelProtocol.swift in Sources */,
 				88BE863428F221F400A4DA5F /* Injector.swift in Sources */,
 				88F5FCDB28F1F7F400F0D1F6 /* ViewModel.swift in Sources */,

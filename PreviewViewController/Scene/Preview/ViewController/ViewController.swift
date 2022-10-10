@@ -38,3 +38,10 @@ final class ViewController: UIViewController {
         viewWillAppear(false)
     }
 }
+
+//struct ViewController_Previews: PreviewProvider {
+//
+//    static var previews: some View {
+//        LivePreviewViewController(for: Injector.shared.getPreviewViewController).previewLayout(.sizeThatFits)
+//    }
+//}

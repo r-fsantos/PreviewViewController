@@ -8,20 +8,33 @@
 import SwiftUI
 import UIKit
 
-struct LivePreviewViewController: UIViewControllerRepresentable {
+//struct LivePreviewViewController: UIViewControllerRepresentable {
+//
+//    let viewControllerBuilder: () -> UIViewController
+//
+//    init(_ viewControllerbuilder: @escaping () -> UIViewController) {
+//        self.viewControllerBuilder = viewControllerbuilder
+//    }
+//
+//    func makeUIViewController(context: Context) -> UIViewController {
+//        viewControllerBuilder()
+//    }
+//
+//    func updateUIViewController(_ uiViewController: UIViewController, context: Context) { }
+//
+//}
 
-    typealias UIViewControllerType = UIViewController
+struct LivePreviewViewController: UIViewRepresentable {
 
-    let viewControllerBuilder: () -> UIViewController
+    private let viewController: UIViewController
 
-    init(_ viewControllerbuilder: @escaping () -> UIViewController) {
-        self.viewControllerBuilder = viewControllerbuilder
+    init(for viewController: UIViewController) {
+        self.viewController = viewController
     }
 
-    func makeUIViewController(context: Context) -> UIViewController {
-        viewControllerBuilder()
+    func makeUIView(context: Context) -> some UIView {
+        self.viewController.view
     }
 
-    func updateUIViewController(_ uiViewController: UIViewController, context: Context) { }
-
+    func updateUIView(_ uiView: UIViewType, context: Context) { }
 }
